@@ -4,6 +4,7 @@ import './App.css';
 import Header from './component/Header';
 import Particles from "react-particles-js";
 import Aboutme from "./component/AboutMe";
+import Intrest from "./component/Intrest"
 function App() {
   return (
     <div>
@@ -28,9 +29,11 @@ function App() {
         }
       }}
       />
+      
       <Navebar />
       <Header />
       <Aboutme/>
+      <Intrest/>
     </div>
   );
 }

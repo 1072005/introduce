@@ -36,6 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+:root{
+  --primary-white:#fff;
+  --primary-light-gray:#f4f4f4;
+  --primary-orange:#f9ab00;
+  --primary-dark:rgb(52,58,64);
+  --primary-red:#ef4035;
+  --primary-hover-red:#f33501;
+  --primary-skin:rgba(243,232,187,0.1);
+}
+
+body{
+  font-family: "Roboto Condesed" sans-serif;
+}
 /**************NAVBAR******************/
 
 nav{
@@ -60,7 +78,7 @@ nav ul li{
 .navbar-nav > li > a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
-  color: #fff !important;
+  color: var(--primary-white) !important;
   border-top:0.1875rem solid rgba(255,255,255,0) ; 
 }
 
@@ -69,7 +87,7 @@ nav ul li{
   padding: 0rem !important;
   height: 6rem !important; 
   font-size: 3.125rem;
-  color: #fff !important;
+  color:var(--primary-white) !important;
 }
 
 @media(max-width:768px){
@@ -84,15 +102,15 @@ nav ul li{
 } 
 
 .navbar-nav > li > a.active:focus{
-  border-top:0.1875rem solid orange;
+  border-top:0.1875rem solid var(--primary-orange);
 }
 
 .navbar-nav > li > a:hover{
-  border-top:0.1875rem solid orange;
+  border-top:0.1875rem solid var(--primary-orange);
 }
 
 .Navicon{
-  color: #fff;
+  color: var(--primary-white);
 }
 
 /*************WALLPAPER*******************/
@@ -119,14 +137,14 @@ nav ul li{
 }
 
 .main-info h1{
-  color: orange;
+  color: var(--primary-orange);
   text-transform: uppercase;
 }
 
 /*************TYPE-TEXT***********/
 .typed-text{
   font-size: 2rem;
-  color: #fff;
+  color: var(--primary-white);
 }
 
 @media(max-width:768px){
@@ -141,18 +159,18 @@ nav ul li{
 }  
 /*************MAIN OFFER***********/
 .btn-main-offer{
-  border: 1px solid #ef4035;
+  border: 1px solid var(--primary-red);
   text-transform: uppercase;
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
-  color:#fff;
+  color:var(--primary-white);
   margin: 2rem;
 }
 
 .btn-main-offer:hover{
   text-decoration: none;
-  background-color: #f33501;
-  color: #FFF;
+  background-color: var(--primary-hover-red);
+  color: var(--primary-white);
   transition: .2s ease-in-out;
 }
 /*************PARTICAL***********/
@@ -184,7 +202,7 @@ nav ul li{
   border-radius: 50%;
   padding: .3rem;
   
-  border: 1px solid orange;
+  border: 1px solid var(--primary-orange);
 }
 
 .myimg{
@@ -194,7 +212,7 @@ nav ul li{
 }
 
 .about-heading{
-  color: orange;
+  color: var(--primary-orange);
   text-transform: uppercase;
   
 }
@@ -217,7 +235,18 @@ nav ul li{
 }  
 
 .container.bgcolor{
-  background-color: rgba(243,232,187,0.4);
+  background-color: var(--primary-skin);
 }
   
 
+/*************INTEREST***********/
+.intrest{
+  text-align: center;
+  padding-bottom: 2rem;
+  background: var(--primary-light-gray);
+}
+
+.intrest h1{
+  color: var(--primary-dark);
+  text-transform: uppercase;
+}
