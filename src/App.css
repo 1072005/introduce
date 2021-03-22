@@ -36,3 +36,185 @@
     transform: rotate(360deg);
   }
 }
+/**************NAVBAR******************/
+
+nav{
+  z-index: 2;
+}
+
+.logo{
+  width: 6.25rem ;
+}
+
+nav a.nav-link{
+  font-weight:500 ;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li{
+  text-transform: uppercase;
+
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: #fff !important;
+  border-top:0.1875rem solid rgba(255,255,255,0) ; 
+}
+
+.navbar-brand{
+  max-width: 17.25rem;
+  padding: 0rem !important;
+  height: 6rem !important; 
+  font-size: 3.125rem;
+  color: #fff !important;
+}
+
+@media(max-width:768px){
+  .navbar-brand{
+    width: 7rem;
+    font-size: 1.5rem;
+  }
+
+  .logo{
+    width: 6rem;
+  }
+} 
+
+.navbar-nav > li > a.active:focus{
+  border-top:0.1875rem solid orange;
+}
+
+.navbar-nav > li > a:hover{
+  border-top:0.1875rem solid orange;
+}
+
+.Navicon{
+  color: #fff;
+}
+
+/*************WALLPAPER*******************/
+.header-wraper{
+  position: relative;
+  background: url(component/assert/paper.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.main-info h1{
+  color: orange;
+  text-transform: uppercase;
+}
+
+/*************TYPE-TEXT***********/
+.typed-text{
+  font-size: 2rem;
+  color: #fff;
+}
+
+@media(max-width:768px){
+  .main-info h1{
+    font-size: 1.5rem !important;
+  }
+
+  .typed-text{
+    font-size: 1.3rem !important;
+    
+  }
+}  
+/*************MAIN OFFER***********/
+.btn-main-offer{
+  border: 1px solid #ef4035;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color:#fff;
+  margin: 2rem;
+}
+
+.btn-main-offer:hover{
+  text-decoration: none;
+  background-color: #f33501;
+  color: #FFF;
+  transition: .2s ease-in-out;
+}
+/*************PARTICAL***********/
+
+.tsparticles-canvas-el{
+  position: absolute;
+  height: 100vh;
+  width: 100vh;
+  z-index: 1;
+}
+
+  @media(max-width:768px){
+  .particles-canves{
+    display: none;
+  }
+  
+}  
+
+/*************ABOUTME***********/
+
+.photo-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.profile-img{
+  width: 30rem;
+  border-radius: 50%;
+  padding: .3rem;
+  border: 1px solid orange;
+}
+
+.myimg{
+  width: 30rem;
+  border-radius: 0.625rem;
+
+}
+
+.about-heading{
+  color: orange;
+  text-transform: uppercase;
+  
+}
+
+@media(max-width:468px){
+  .profile-img{
+    width: 10rem;
+  }
+  .myimg{
+    width: 16rem;
+  }
+}
+
+@media(min-width:468)and(max-width:768px){
+  .myimg{
+    width: 10rem;
+  }
+  
+}  
+
+
+  
+
