@@ -4,7 +4,8 @@ import './App.css';
 import Header from './component/Header';
 import Particles from "react-particles-js";
 import Aboutme from "./component/AboutMe";
-import Intrest from "./component/Intrest"
+import Intrest from "./component/Intrest";
+import Experience from "./component/Experience";
 function App() {
   return (
     <div>
@@ -34,6 +35,7 @@ function App() {
       <Header />
       <Aboutme/>
       <Intrest/>
+      <Experience/>
     </div>
   );
 }

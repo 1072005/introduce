@@ -263,6 +263,7 @@ nav ul li{
   text-transform: uppercase;
 }
 
+/* 背景白色下方橘色底線 */
 .intrest .box{
   height: 14rem;
   border-bottom: 0.3125rem solid var(--primary-orange);
@@ -270,9 +271,19 @@ nav ul li{
   margin-bottom: .875rem;
   background: var(--primary-white);
 }
-
+/* 鼠標移上去時呈現橘色 */
 .intrest .box:hover{
   background: var(--primary-orange);
+  transition: .6s ease-in-out;
   
 }
-
+/* 鼠標移上去時icon呈現白色 */
+.intrest .box:hover .icon{
+  color: var(--primary-white);
+  
+}
+/* 鼠標移上去時標題呈現白色 */
+.intrest .box:hover h3{
+  color: var(--primary-white);
+  
+}
