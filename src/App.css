@@ -39,8 +39,10 @@
 
 
 
-
+/* import字體 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+/* 控制顏色 */
 :root{
   --primary-white:#fff;
   --primary-light-gray:#f4f4f4;
@@ -50,38 +52,40 @@
   --primary-hover-red:#f33501;
   --primary-skin:rgba(243,232,187,0.1);
 }
-
+/* 字體 */
 body{
   font-family: "Roboto Condesed" sans-serif;
 }
+
 /**************NAVBAR******************/
 
+/* 讓partical不跑到前面 */
 nav{
   z-index: 2;
 }
-
+/* logo大小 */
 .logo{
   width: 6.25rem ;
 }
-
+/* nav上hone、aboutme...字體厚度、間距、屬標圖示 */
 nav a.nav-link{
   font-weight:500 ;
   letter-spacing: 0.0375rem;
   cursor: pointer;
 }
-
+/* 字體大寫 */
 nav ul li{
   text-transform: uppercase;
 
 }
-
+/* nav上hone、aboutme...字體顏色左右距離 */
 .navbar-nav > li > a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-white) !important;
   border-top:0.1875rem solid rgba(255,255,255,0) ; 
 }
-
+/* 元智大學字體顏色、大小，Navbar heigh */
 .navbar-brand{
   max-width: 17.25rem;
   padding: 0rem !important;
@@ -89,7 +93,7 @@ nav ul li{
   font-size: 3.125rem;
   color:var(--primary-white) !important;
 }
-
+/* 畫面<768px時navbar寬、字體、LOGO大小 */
 @media(max-width:768px){
   .navbar-brand{
     width: 7rem;
@@ -100,20 +104,21 @@ nav ul li{
     width: 6rem;
   }
 } 
-
+/* nav上hone、aboutme...字體點擊後上方呈現border */
 .navbar-nav > li > a.active:focus{
   border-top:0.1875rem solid var(--primary-orange);
 }
-
+/* nav上hone、aboutme...字體鼠標移過去後上方呈現border */
 .navbar-nav > li > a:hover{
   border-top:0.1875rem solid var(--primary-orange);
 }
-
+/* nav上hone、aboutme...字體解析度較小時產生icon的顏色 */
 .Navicon{
   color: var(--primary-white);
 }
 
 /*************WALLPAPER*******************/
+/* 背景圖片、大小、可視範圍 */
 .header-wraper{
   position: relative;
   background: url(component/assert/paper.jpg) no-repeat;
@@ -121,7 +126,7 @@ nav ul li{
   background-position: center;
   height: 90vh;
 }
-
+/* 彈性容器、由上往下排置中、Particles能在此頁面上 */
 .main-info{
   display: flex;
   position: absolute;
@@ -135,18 +140,20 @@ nav ul li{
   text-align: center;
   z-index: 1;
 }
-
+/* Shin_yi大寫且橘色 */
 .main-info h1{
   color: var(--primary-orange);
   text-transform: uppercase;
 }
 
 /*************TYPE-TEXT***********/
+
+/* "Web Design","Unity","Game","Volleyball"字體顏色跟大小 */
 .typed-text{
   font-size: 2rem;
   color: var(--primary-white);
 }
-
+/* 畫面<768px時字體大小 */
 @media(max-width:768px){
   .main-info h1{
     font-size: 1.5rem !important;
@@ -157,7 +164,10 @@ nav ul li{
     
   }
 }  
+
 /*************MAIN OFFER***********/
+
+/* button的邊框、大寫、顏色 */
 .btn-main-offer{
   border: 1px solid var(--primary-red);
   text-transform: uppercase;
@@ -166,7 +176,7 @@ nav ul li{
   color:var(--primary-white);
   margin: 2rem;
 }
-
+/* button滑鼠移上去時顏色、文字特效、轉場先加速後減速 */
 .btn-main-offer:hover{
   text-decoration: none;
   background-color: var(--primary-hover-red);
@@ -174,49 +184,49 @@ nav ul li{
   transition: .2s ease-in-out;
 }
 /*************PARTICAL***********/
-
+/* Particl範圍 */
 .tsparticles-canvas-el{
   position: absolute;
   height: 100vh;
   width: 100vh;
   z-index: 1;
 }
-
+/* 畫面<768px時隱藏particles */
   @media(max-width:768px){
-  .particles-canves{
-    display: none;
+  .particles-canvas{
+    display:none;
   }
   
 }  
 
 /*************ABOUTME***********/
 
+/* 圓框img置中 */
 .photo-wrap{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+/* 寬度、圓框外邊框顏色 */
 .profile-img{
-  width: 30rem;
+  width: 28rem;
   border-radius: 50%;
   padding: .3rem;
-  
   border: 1px solid var(--primary-orange);
 }
-
+/* 方形img寬度、邊框圓滑 */
 .myimg{
   width: 30rem;
   border-radius: 0.625rem;
 
 }
-
+/* 字體大寫橘色 */
 .about-heading{
   color: var(--primary-orange);
   text-transform: uppercase;
   
 }
-
+/* 畫面<468時圖片大小 */
 @media(max-width:468px){
   .profile-img{
     width: 10rem;
@@ -226,26 +236,28 @@ nav ul li{
     width: 16rem;
   }
 }
-
+/* 468<畫面<768時大小 */
 @media(min-width:468)and(max-width:768px){
   .myimg{
     width: 10rem;
   }
   
 }  
-
+/* aboutme 背景顏色 */
 .container.bgcolor{
   background-color: var(--primary-skin);
 }
   
 
 /*************INTEREST***********/
+
+/* 置中、調整背景顏色 */
 .intrest{
   text-align: center;
   padding-bottom: 2rem;
   background: var(--primary-light-gray);
 }
-
+/* 字體顏色、大寫 */
 .intrest h1{
   color: var(--primary-dark);
   text-transform: uppercase;

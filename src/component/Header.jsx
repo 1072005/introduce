@@ -8,8 +8,8 @@ const Header = () => {
                 <h1>SHIN_YI</h1>
                 <Typed className="typed-text" 
                 strings={["Web Design","Unity","Game","Volleyball"]}
-                typeSpeed={40}
-                backSpeed={60}
+                typeSpeed={40}//插件寫過去的速度
+                backSpeed={60}//插件寫回來的速度
                 loop
                 />
             <a href="#" className="btn-main-offer">contract me</a>
