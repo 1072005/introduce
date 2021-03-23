@@ -262,3 +262,17 @@ nav ul li{
   color: var(--primary-dark);
   text-transform: uppercase;
 }
+
+.intrest .box{
+  height: 14rem;
+  border-bottom: 0.3125rem solid var(--primary-orange);
+  padding: 1.625rem;
+  margin-bottom: .875rem;
+  background: var(--primary-white);
+}
+
+.intrest .box:hover{
+  background: var(--primary-orange);
+  
+}
+
