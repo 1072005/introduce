@@ -11,7 +11,7 @@ const Intrest = () => {
             <h1 className="py-5">Interest</h1>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-3 col-sm-6">
+                    <div className="col-lg-3 col-md-6 col-sm-6">
                         <div className="box">
                             <div className="circle"><FontAwesomeIcon className="icon" icon={faFileCode} size="2x" /></div>
                             <h3>Web Design</h3>
@@ -20,7 +20,7 @@ const Intrest = () => {
                     </div>
 
                     {/*-------*/}
-                    <div className="col-md-3 col-sm-6">
+                    <div className="col-lg-3 col-md-6 col-sm-6">
                         <div className="box">
                             <div className="circle"><FontAwesomeIcon className="icon" icon={faUnity} size="2x" /></div>
                             <h3>Unity</h3>
@@ -29,7 +29,7 @@ const Intrest = () => {
                     </div>
 
                     {/*--------*/}
-                    <div className="col-md-3 col-sm-6">
+                    <div className="col-lg-3 col-md-6 col-sm-6">
                         <div className="box">
                             <div className="circle"><FontAwesomeIcon className="icon" icon={faGamepad} size="2x" /></div>
                             <h3>Game</h3>
@@ -38,7 +38,7 @@ const Intrest = () => {
                     </div>
 
                     {/*--------*/}
-                    <div className="col-md-3 col-sm-6">
+                    <div className="col-lg-3 col-md-6 col-sm-6">
                         <div className="box">
                             <div className="circle"><FontAwesomeIcon className="icon" icon={faVolleyballBall} size="2x" /></div>
                             <h3>Volleyball</h3>
