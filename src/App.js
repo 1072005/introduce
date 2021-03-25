@@ -7,9 +7,9 @@ import Aboutme from "./component/AboutMe";
 import Intrest from "./component/Intrest";
 import Experience from "./component/Experience";
 import Contects from "./component/Contacts";
-
+import Footer from "./component/Footer";
 function App() {
-  
+
   return (
       
     <div>
@@ -41,6 +41,7 @@ function App() {
       <Intrest/>
       <Experience/>
       <Contects/>
+      <Footer/>
     </div>
   );
 }

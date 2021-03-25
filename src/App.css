@@ -53,6 +53,7 @@
     --primary-dark: rgb(52, 58, 64);
     --primary-red: #ef4035;
     --primary-green: green;
+    --primary-black: black;
     --primary-hover-red: #f33501;
     --primary-skin: rgba(243, 232, 187, 0.1);
 }
@@ -601,4 +602,28 @@ textarea.form-control{
     .contacts p{
         padding:0 0.4rem;
     }
+}
+
+/************FOOTER***********/
+
+/* 背景顏色、字體顏色 */
+.footer{
+    background: var(--primary-black);
+    color: var(--primary-dark-gray);
+    padding: 3rem;
+}
+
+.footer a{
+    text-decoration: none;
+    color: var(--primary-dark-gray);
+}
+
+.footer a:hover{
+    text-decoration: none;
+    color: var(--primary-orange);
+    cursor: pointer;
+}
+
+.footer p{
+    margin-bottom: 0;
 }
