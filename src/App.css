@@ -497,23 +497,24 @@ nav ul li {
         width: 100%;
     }
 }
-
+/****************聯絡我******************************/
+/* 整個表單的背景顏色跟padding */
 .contacts {
     background: var(--primary-dark);
     padding: 3rem 0;
     
 }
-
+/* 表單大標顏色 */
 .contacts h1 {
     color: var(--primary-orange);
     padding: 1.3rem 0;
 }
-
+/* 表單內字體顏色、大小 */
 .contacts p{
     color: var(--primary-light-gray);
     font-size: 1.2rem;
 }
-
+/* 表單內輸入訊息底線顏色邊框範圍 */
 .contacts input, .contacts textarea{
     width: 100%;
     box-sizing: border-box;
@@ -528,29 +529,29 @@ nav ul li {
     margin-top: 1rem;
     padding-left: 0 !important;
 }
-
+/* 容器padding */
 .contacts .container{
     padding: 4rem 0;
 }
-
+/* 輸入訊底底線換色 */
 .contacts input:focus, .contacts textarea:focus{
     background: transparent;
     color: var(--primary-orange);
     border-bottom: 0.125rem solid var(--primary-dark-gray);
 }
-
+/* 調整右邊輸入內容底線 */
 .contacts textarea{
     height: 12.2rem !important;
     margin: 2rem 0;
 }
-
+/* 調整buttn */
 .contact-btn{
     margin: 1rem 0 0 0;
     width: 100%;
     background: none;
 
 }
-
+/* 底線換色 */
 .line{
     position: relative;
     top: -0.8rem;
@@ -559,26 +560,26 @@ nav ul li {
     background: var(--primary-orange);
     display: inline-block;
 }
-
+/* 底線點擊逐漸換色 */
 input:focus+.line, textarea:focus+.line{
     width: 100%;
     transition: width 0.5s ease;
 }
-
+/* 調整位置 */
 input.form-control{
     margin: -0.3rem 0;
 }
-
+/* 調整位置 */
 textarea.form-control{
     margin: -0.3rem 0;
 }
-
+/* 錯誤訊息顏色跟位置 */
 .error-message{
     color: var(--primary-white);
     background: var(--primary-red);
     text-align: left;
 }
-
+/* 成功訊息顏色跟位置 */
 .success-message{
     font-weight: 900;
     font-size: 2.5rem;
@@ -586,7 +587,7 @@ textarea.form-control{
     display: block;
     text-align: right;
 }
-
+/* 調整畫面<768px時 */
 @media(max-width: 768px){
 
     .contacts{
