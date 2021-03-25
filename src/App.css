@@ -51,11 +51,13 @@
     --primary-dark-gray: #666666;
     --primary-orange: #f9ab00;
     --primary-dark: rgb(52, 58, 64);
+    --primary-dark-formgray:rgb(70,70,70);
     --primary-red: #ef4035;
     --primary-green: green;
     --primary-black: black;
     --primary-hover-red: #f33501;
     --primary-skin: rgba(243, 232, 187, 0.1);
+    
 }
 
 
@@ -63,6 +65,8 @@
 
 body {
     font-family: "Roboto Condesed" sans-serif;
+    font-weight: 900;
+    
 }
 
 
@@ -79,7 +83,8 @@ nav {
 /* logo大小 */
 
 .logo {
-    width: 6.25rem;
+    margin-top: -0.75rem;
+    width:8.25rem
 }
 
 
@@ -115,7 +120,7 @@ nav ul li {
     max-width: 17.25rem;
     padding: 0rem !important;
     height: 6rem !important;
-    font-size: 3.125rem;
+    font-size: 2.125rem;
     color: var(--primary-white) !important;
 }
 
@@ -125,10 +130,12 @@ nav ul li {
 @media(max-width:768px) {
     .navbar-brand {
         width: 7rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        height: 5rem !important;
     }
     .logo {
-        width: 6rem;
+        width: 7rem;
+        margin-top: -0.75rem;
     }
 }
 
@@ -164,7 +171,7 @@ nav ul li {
     background: url(component/assert/paper.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 100vh;
 }
 
 
@@ -214,32 +221,6 @@ nav ul li {
         font-size: 1.3rem !important;
     }
 }
-
-
-/*************MAIN OFFER***********/
-
-
-/* button的邊框、大寫、顏色 */
-
-.btn-main-offer {
-    border: 1px solid var(--primary-red);
-    text-transform: uppercase;
-    border-radius: 0;
-    padding: 0.625rem 0.75rem 0.75rem 0.75rem;
-    color: var(--primary-white);
-    margin: 2rem;
-}
-
-
-/* button滑鼠移上去時顏色、文字特效、轉場先加速後減速 */
-
-.btn-main-offer:hover {
-    text-decoration: none;
-    background-color: var(--primary-hover-red);
-    color: var(--primary-white);
-    transition: .2s ease-in-out;
-}
-
 
 /*************PARTICAL***********/
 
@@ -296,6 +277,7 @@ nav ul li {
 /* 字體大寫橘色 */
 
 .about-heading {
+    font-weight: 900;
     color: var(--primary-orange);
     text-transform: uppercase;
 }
@@ -344,6 +326,7 @@ nav ul li {
 /* 字體顏色、大寫 */
 
 .intrest h1 {
+    font-weight: 900;
     color: var(--primary-dark);
     text-transform: uppercase;
 }
@@ -493,15 +476,19 @@ nav ul li {
         width: 100%;
     }
     .timeline-block-left {
-        float: none;
+        float: none ;     
         direction: ltr;
         width: 100%;
+    }
+
+    .timeline-block-left h3 {
+        text-align: left;
     }
 }
 /****************聯絡我******************************/
 /* 整個表單的背景顏色跟padding */
 .contacts {
-    background: var(--primary-dark);
+    background: var(--primary-dark-formgray);
     padding: 3rem 0;
     
 }
@@ -509,11 +496,13 @@ nav ul li {
 .contacts h1 {
     color: var(--primary-orange);
     padding: 1.3rem 0;
+    font-weight: 900;
 }
 /* 表單內字體顏色、大小 */
 .contacts p{
     color: var(--primary-light-gray);
     font-size: 1.2rem;
+    
 }
 /* 表單內輸入訊息底線顏色邊框範圍 */
 .contacts input, .contacts textarea{
@@ -627,3 +616,16 @@ textarea.form-control{
 .footer p{
     margin-bottom: 0;
 }
+
+.btn-main-offer{
+    border:0.125rem solid var(--primary-black);
+    background: var(--primary-white);
+    width: 10rem;
+    font-weight: 900;
+}
+
+.btn-main-offer:hover{
+    border:0.125rem solid var(--primary-hover-red);
+    background: var(--primary-red);
+}
+

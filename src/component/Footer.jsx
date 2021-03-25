@@ -8,44 +8,65 @@ import {
     LineIcon
 
 } from "react-share"
+import {Link} from "react-scroll";
 
-
-const Footer = () => {
-    var date = new Date();
+class Footer extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {date: new Date()};
+      }
+    
+      componentDidMount() {
+        this.timerID = setInterval(
+          () => this.tick(),
+          1000
+        );
+      }
+    
+      componentWillUnmount() {
+        clearInterval(this.timerID);
+      }
+    
+      tick() {
+        this.setState({
+          date: new Date()
+        });
+      }
+    render(){
     return (
         <div className="footer">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-4 col-md-6 col-sm-6">
-                        <div className="d-flex">
+                        <div className="d-flex pt-1">
                             <p>目前就讀元智大學</p>
                         </div>
-                        <div className="d-flex">
+                        <div className="d-flex pt-1">
                             <p>a3652284@yahoo.com.tw</p>
                         </div>
-                        <div className="d-flex">
+                        <div className="d-flex pt-1">
                             <p>a3652284@gmail.com</p>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-2 col-sm-6">
                         <div className="row">
-                            <div className="col">
-                                <a className="footer-nav">首頁</a>
+                            <div className="col pt-1">
+                                <Link smooth={true} to="home" offset={-110} className="footer-nav">首頁</Link>
                                 <br />
-                                <a className="footer-nav">關於我</a>
+                                <Link smooth={true} to="about" offset={-110} className="footer-nav">關於我</Link>
                                 <br />
-                                <a className="footer-nav">興趣</a>
+                                <Link smooth={true} to="interest" offset={-110} className="footer-nav">興趣</Link>
                             </div>
                             <div className="col">
-                                <a className="footer-nav">大學時期</a>
+                                <Link smooth={true} to="experience" offset={-110} className="footer-nav">大學時期</Link>
                                 <br />
-                                <a className="footer-nav">聯絡我</a>
+                                <Link smooth={true} to="contacts" offset={-110} className="footer-nav">聯絡我</Link>
 
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
-                        <div className="d-flex justify-content-center">
+                        <div className="d-flex justify-content-center m-3">
                             <FacebookShareButton
                                 url={"https://www.facebook.com/profile.php?id=100001984988001"}
                                 quote={"分享"}
@@ -71,8 +92,8 @@ const Footer = () => {
                             </LineShareButton>
                         </div>
                         <p className="pt-3 text-center">
-                            開啟時間
-                            {date.toLocaleString()}                     
+                            現在時間
+                            {this.state.date.toLocaleTimeString()}                  
                         </p>
                     </div>
                 </div>
@@ -80,6 +101,7 @@ const Footer = () => {
 
         </div>
     )
+}
 }
 
 export default Footer

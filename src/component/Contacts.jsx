@@ -32,7 +32,7 @@ const Contacts = () => {
     }
 
     return (
-        <div className="contacts">
+        <div id="contacts" className="contacts">
             <div className="text-center">
                 <h1>聯絡我</h1>
                 <p>請把表單填寫完成</p>

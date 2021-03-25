@@ -3,7 +3,7 @@ import Typed from 'react-typed';
 
 const Header = () => {
     return (
-        <div className="header-wraper">
+        <div id="home" className="header-wraper">
             <div className="main-info">
                 <h1>SHIN_YI</h1>
                 <Typed className="typed-text" 
@@ -12,7 +12,7 @@ const Header = () => {
                 backSpeed={60}//插件寫回來的速度
                 loop
                 />
-            <a href="#" className="btn-main-offer">contract me</a>
+            
             </div>
             
         </div>

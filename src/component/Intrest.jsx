@@ -7,8 +7,8 @@ import { faUnity } from "@fortawesome/free-brands-svg-icons";
 
 const Intrest = () => {
     return (
-        <div className="intrest">
-            <h1 className="py-5">Interest</h1>
+        <div id="interest" className="intrest">
+            <h1 className="py-5">興趣</h1>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-3 col-md-6 col-sm-6">
