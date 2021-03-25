@@ -15,7 +15,7 @@ const AboutMe = () => {
                     <p>目前就讀元智大學資訊傳播學系大三學生，大學時主要學習程式
                     語言與影片製作相關，
                     對程式語言較為有興趣，學習過C++、C#、HTML、Jquery、Javascript、unity、css、
-                    bootstrape.react些許的mongodb、nodejs
+                    bootstrape、react些許的mongodb、nodejs
                     </p>
                     <img className="myimg" src={Img1} alt="img..."></img>
                 </div>

@@ -195,7 +195,8 @@ nav ul li {
 /* Shin_yi大寫且橘色 */
 
 .main-info h1 {
-    color: var(--primary-orange);
+    font-size: 5rem;
+    color: var(--primary-white);
     text-transform: uppercase;
 }
 
@@ -206,8 +207,8 @@ nav ul li {
 /* "Web Design","Unity","Game","Volleyball"字體顏色跟大小 */
 
 .typed-text {
-    font-size: 2rem;
-    color: var(--primary-white);
+    font-size: 2.25rem;
+    color: var(--primary-orange);
 }
 
 
