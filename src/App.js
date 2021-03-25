@@ -6,8 +6,12 @@ import Particles from "react-particles-js";
 import Aboutme from "./component/AboutMe";
 import Intrest from "./component/Intrest";
 import Experience from "./component/Experience";
+import Contects from "./component/Contacts";
+
 function App() {
+  
   return (
+      
     <div>
       <Particles
       className="particles-canvas"
@@ -36,6 +40,7 @@ function App() {
       <Aboutme/>
       <Intrest/>
       <Experience/>
+      <Contects/>
     </div>
   );
 }
